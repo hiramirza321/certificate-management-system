@@ -1,0 +1,357 @@
+/* =========================================================
+   Gold Certificate Template
+   ========================================================= */
+
+.gold-certificate {
+    position: relative;
+    width: 1120px;
+    min-height: 790px;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #3a2a14;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(212, 175, 55, 0.12),
+            transparent 50%
+        ),
+        linear-gradient(
+            rgba(255, 251, 239, 0.98),
+            rgba(255, 247, 224, 0.98)
+        );
+    box-shadow: 0 20px 60px rgba(87, 61, 13, 0.2);
+}
+
+.gold-certificate::before,
+.gold-certificate::after {
+    display: none;
+    content: none;
+}
+
+.gold-frame {
+    position: absolute;
+    pointer-events: none;
+}
+
+.gold-frame-outer {
+    inset: 12px;
+    border: 8px solid #d4af37;
+}
+
+.gold-frame-inner {
+    inset: 29px;
+    border: 2px solid #7a5a18;
+}
+
+.gold-corner {
+    position: absolute;
+    z-index: 3;
+    width: 95px;
+    height: 95px;
+}
+
+.gold-corner-top-left {
+    top: 19px;
+    left: 19px;
+    border-top: 5px solid #d4af37;
+    border-left: 5px solid #d4af37;
+}
+
+.gold-corner-top-right {
+    top: 19px;
+    right: 19px;
+    border-top: 5px solid #d4af37;
+    border-right: 5px solid #d4af37;
+}
+
+.gold-corner-bottom-left {
+    bottom: 19px;
+    left: 19px;
+    border-bottom: 5px solid #d4af37;
+    border-left: 5px solid #d4af37;
+}
+
+.gold-corner-bottom-right {
+    right: 19px;
+    bottom: 19px;
+    border-right: 5px solid #d4af37;
+    border-bottom: 5px solid #d4af37;
+}
+
+.gold-certificate-inner {
+    position: relative;
+    z-index: 2;
+    min-height: 790px;
+    padding: 38px 72px 34px;
+    text-align: center;
+}
+
+.gold-header {
+    text-align: center;
+}
+
+.gold-logo {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 10px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border: 4px solid #d4af37;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow:
+        0 0 0 7px rgba(212, 175, 55, 0.15),
+        0 10px 24px rgba(87, 61, 13, 0.12);
+}
+
+.gold-logo img {
+    width: 100%;
+    height: 100%;
+    padding: 7px;
+    object-fit: contain;
+}
+
+.gold-logo-text {
+    color: #7a5a18;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.gold-organization-name {
+    margin: 0;
+    color: #3b2a12;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 31px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.gold-organization-tagline {
+    margin: 7px 0 16px;
+    color: #806d4f;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.gold-ribbon {
+    width: fit-content;
+    margin: 0 auto 20px;
+    padding: 12px 32px;
+    border-radius: 999px;
+    color: #ffffff;
+    background:
+        linear-gradient(
+            135deg,
+            #7a5a18,
+            #d4af37,
+            #a77d1f
+        );
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 24px rgba(122, 90, 24, 0.2);
+}
+
+.gold-presented-text {
+    margin: 0 0 10px;
+    color: #6d6252;
+    font-size: 17px;
+}
+
+.gold-student-name {
+    margin: 0;
+    color: #3b2a12;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 50px;
+    line-height: 1.15;
+    word-break: break-word;
+}
+
+.gold-divider {
+    width: 470px;
+    margin: 12px auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.gold-divider::before,
+.gold-divider::after {
+    flex: 1;
+    height: 2px;
+    content: "";
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #d4af37
+    );
+}
+
+.gold-divider::after {
+    background: linear-gradient(
+        90deg,
+        #d4af37,
+        transparent
+    );
+}
+
+.gold-divider span {
+    width: 12px;
+    height: 12px;
+    display: block;
+    border: 2px solid #d4af37;
+    transform: rotate(45deg);
+}
+
+.gold-completion-text {
+    margin: 14px 0 7px;
+    color: #6d6252;
+    font-size: 17px;
+}
+
+.gold-course-name {
+    margin: 0;
+    color: #7a5a18;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+}
+
+.gold-meta-grid {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: 1fr 140px 1fr;
+    align-items: center;
+    gap: 24px;
+}
+
+.gold-meta-card {
+    padding: 17px 20px;
+    border: 1px solid rgba(212, 175, 55, 0.45);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.76);
+    box-shadow: 0 10px 24px rgba(87, 61, 13, 0.08);
+    text-align: left;
+}
+
+.gold-meta-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #806d4f;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.gold-meta-value {
+    color: #3b2a12;
+    font-size: 16px;
+}
+
+.gold-seal {
+    width: 118px;
+    height: 118px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    border: 6px double #d4af37;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow:
+        0 0 0 8px rgba(212, 175, 55, 0.12),
+        0 10px 24px rgba(87, 61, 13, 0.12);
+}
+
+.gold-seal-inner {
+    width: 84px;
+    height: 84px;
+    display: grid;
+    place-items: center;
+    border: 2px solid #d4af37;
+    border-radius: 50%;
+    color: #7a5a18;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.gold-footer {
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    align-items: end;
+    gap: 30px;
+}
+
+.gold-signature {
+    text-align: center;
+}
+
+.gold-signature img {
+    width: 190px;
+    height: 62px;
+    display: block;
+    margin: 0 auto 6px;
+    object-fit: contain;
+}
+
+.gold-signature-line {
+    width: 220px;
+    margin: 0 auto 9px;
+    border-top: 2px solid #d4af37;
+}
+
+.gold-signature strong {
+    display: block;
+    color: #3b2a12;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+}
+
+.gold-signature span {
+    display: block;
+    margin-top: 4px;
+    color: #806d4f;
+    font-size: 11px;
+}
+
+.gold-qr-box {
+    padding: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 24px rgba(87, 61, 13, 0.08);
+    text-align: center;
+}
+
+.gold-qr-box img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 7px;
+    object-fit: contain;
+}
+
+.gold-qr-box span {
+    color: #806d4f;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+@media print {
+    .gold-certificate {
+        width: 297mm;
+        min-height: 210mm;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .gold-certificate-inner {
+        min-height: 210mm;
+        padding: 10mm 18mm 8mm;
+    }
+}
